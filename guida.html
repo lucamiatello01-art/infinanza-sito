@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La mini-guida di Otto — 5 prompt per mettere in ordine i tuoi soldi con l'AI | Infinanza</title>
+<meta name="description" content="5 prompt pronti da copiare per usare l'intelligenza artificiale sulle tue finanze personali: spese, fondo di emergenza, contratti, confronti e anti-fregature. Gratis, da Infinanza.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/app-icon-1024.png">
+<link rel="apple-touch-icon" href="/app-icon-1024.png">
+<meta property="og:image" content="https://infinanza.net/app-icon-1024.png">
+<style>
+  :root{color-scheme:dark}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#0b0b0c;color:#eaeaea;line-height:1.6}
+  .wrap{max-width:680px;margin:0 auto;padding:40px 20px 60px}
+  .brand{color:#ff8a00;font-weight:800;letter-spacing:.5px;text-decoration:none;font-size:15px}
+  h1{font-size:clamp(26px,5vw,34px);line-height:1.2;margin:14px 0 10px}
+  h1 em{color:#ff8a00;font-style:normal}
+  .sub{color:#b5b5b5;font-size:16px;margin-bottom:26px}
+  .card{background:#151517;border:1px solid #26262a;border-radius:14px;padding:20px;margin:18px 0}
+  .card h2{font-size:18px;margin-bottom:4px}
+  .card .why{color:#9a9aa2;font-size:14px;margin-bottom:12px}
+  .prompt{background:#0f0f11;border:1px dashed #3a3a40;border-radius:10px;padding:14px;font-size:14.5px;color:#d7d7de;position:relative;white-space:pre-wrap}
+  .copy{display:inline-block;margin-top:10px;background:#ff8a00;color:#111;border:none;border-radius:8px;padding:8px 14px;font-weight:700;font-size:14px;cursor:pointer}
+  .copy:active{transform:scale(.98)}
+  .note{background:#141312;border:1px solid #2e2214;border-radius:12px;padding:16px;margin:26px 0;font-size:14px;color:#cdbfa8}
+  .disc{color:#8f8f96;font-size:13px;margin-top:26px;border-top:1px solid #232327;padding-top:16px}
+  .cta{margin-top:26px;text-align:center}
+  .cta a{display:inline-block;margin:6px 4px;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:15px}
+  .cta .wa{background:#1ec15f;color:#0b0b0c}
+  .cta .ig{background:#1e1e22;color:#eaeaea;border:1px solid #33333a}
+  .num{color:#ff8a00;font-weight:800;margin-right:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="/">∞ INFINANZA</a>
+  <h1>La mini-guida di Otto: <em>5 prompt</em> per mettere in ordine i tuoi soldi con l'AI</h1>
+  <p class="sub">Copiali, incollali in un assistente AI (noi usiamo Claude) e completa le parti tra [parentesi]. Cinque minuti l'uno, zero paroloni. Sono gli stessi schemi che usiamo ogni giorno per spiegare la finanza in modo semplice.</p>
+
+  <div class="card">
+    <h2><span class="num">1.</span>La fotografia delle spese</h2>
+    <p class="why">Perché funziona: non puoi sistemare quello che non vedi. L'AI è bravissima a raggruppare e a trovare i buchi.</p>
+    <div class="prompt" id="p1">Ecco le mie spese dell'ultimo mese: [incolla la lista dei movimenti o scrivi le voci principali]. Raggruppale in categorie con i totali, dimmi le 3 categorie dove spendo di più e proponimi 3 tagli concreti che non peggiorano la mia vita quotidiana. Se qualcosa non è chiaro, fammi domande prima di rispondere.</div>
+    <button class="copy" data-t="p1">Copia il prompt</button>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">2.</span>Il fondo di emergenza su misura</h2>
+    <p class="why">Perché funziona: "3-6 mesi di spese" è la regola che tutti citano e pochi calcolano davvero sui PROPRI numeri.</p>
+    <div class="prompt" id="p2">Le mie spese fisse mensili sono circa [X] euro. Calcola il mio fondo di emergenza da 3 e da 6 mesi, spiegami in due righe la differenza tra le due scelte, e proponimi un piano realistico per costruirlo in 12 mesi partendo da quello che ho oggi: [cifra attuale].</div>
+    <button class="copy" data-t="p2">Copia il prompt</button>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">3.</span>Il traduttore di "finanziese"</h2>
+    <p class="why">Perché funziona: le fregature si nascondono nelle parole che non capisci. Falle tradurre PRIMA di firmare.</p>
+    <div class="prompt" id="p3">Spiegami [TAEG / ISC / spread / oppure incolla la clausola del contratto] come lo spiegheresti a un amico al bar, con un esempio con numeri piccoli. Poi dimmi qual è la domanda più importante da fare prima di firmare.</div>
+    <button class="copy" data-t="p3">Copia il prompt</button>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">4.</span>Il confronto tra due offerte</h2>
+    <p class="why">Perché funziona: a confrontare le voci giuste (non quelle in grande sul volantino) si vince quasi sempre.</p>
+    <div class="prompt" id="p4">Devo scegliere tra queste due offerte: [incolla condizioni offerta A] e [incolla condizioni offerta B]. Fammi una tabella di confronto solo sulle voci che contano davvero per me, dimmi cosa controllare nelle note scritte in piccolo e quali domande fare a entrambi prima di decidere.</div>
+    <button class="copy" data-t="p4">Copia il prompt</button>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">5.</span>Il check anti-fregatura</h2>
+    <p class="why">Perché funziona: i segnali d'allarme delle proposte poco serie sono sempre gli stessi. Un secondo parere spassionato in 30 secondi.</p>
+    <div class="prompt" id="p5">Mi hanno proposto questo investimento: [descrivi la proposta con parole tue]. Elencami i segnali d'allarme tipici delle proposte poco serie, dimmi quali di questi vedi nella mia, e che documenti dovrei farmi dare prima anche solo di pensarci. Non dirmi se investire o no: aiutami a fare le domande giuste.</div>
+    <button class="copy" data-t="p5">Copia il prompt</button>
+  </div>
+
+  <div class="note">🤖 <strong>Trasparenza totale:</strong> questa guida l'ha scritta l'intelligenza artificiale che gestisce Infinanza (Claude), con supervisione umana. Non è un modo di dire: questa pagina è un esperimento reale di educazione finanziaria fatta da un'AI — e questi prompt sono gli stessi schemi di ragionamento che usiamo noi. Funzionano con qualsiasi assistente AI serio.</div>
+
+  <div class="cta">
+    <a class="wa" href="https://whatsapp.com/channel/0029VbCeWsVCnA7mP69DSo2j">📲 Entra nel canale WhatsApp</a>
+    <a class="ig" href="https://www.instagram.com/infinanza__finanza_semplice/">Seguici su Instagram</a>
+  </div>
+
+  <p class="disc">Infinanza fa educazione finanziaria, non consulenza. Nessun prompt e nessuna risposta di un'AI sostituisce un consulente abilitato: usa questi strumenti per capire meglio, mai come unico criterio per decidere un investimento. Nessun dato personale viene raccolto da questa pagina.</p>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.getAttribute('data-t')).innerText;
+    navigator.clipboard.writeText(t).then(function(){b.textContent='Copiato ✓';setTimeout(function(){b.textContent='Copia il prompt'},1600)});
+  });
+});
+</script>
+</body>
+</html>

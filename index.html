@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infinanza — Educazione finanziaria semplice, ogni giorno</title>
+<meta name="description" content="Infinanza è un progetto editoriale di educazione finanziaria: ogni giorno una notizia che tocca il tuo portafoglio, spiegata semplice, su Instagram e TikTok.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/app-icon-1024.png">
+<link rel="apple-touch-icon" href="/app-icon-1024.png">
+<meta property="og:image" content="https://infinanza.net/app-icon-1024.png">
+<style>
+  :root{color-scheme:dark}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background:#0c0c0d;color:#f5f5f6;line-height:1.6
+  }
+  a{color:#ff8a47}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+
+  /* Nav: link sempre visibili, nessun menu */
+  nav{position:sticky;top:0;background:rgba(12,12,13,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid #232326;z-index:10}
+  nav .wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+  nav .logo{font-weight:900;letter-spacing:2px;color:#f5f5f6;text-decoration:none;font-size:16px}
+  nav .logo span{color:#ff6b1a}
+  nav a.nl{color:#c8cace;text-decoration:none;font-size:14px}
+  nav a.nl:hover{color:#ff8a47}
+
+  header.hero{
+    background:radial-gradient(120% 100% at 50% 120%, #2a1608 0%, #0c0c0d 60%);
+    text-align:center;padding:72px 22px 64px
+  }
+  .inf{font-size:76px;line-height:1;color:#ff6b1a;font-weight:900;
+    text-shadow:0 0 40px rgba(255,107,26,.5)}
+  h1{font-size:40px;font-weight:900;letter-spacing:5px;margin-top:14px}
+  h1 span{color:#ff6b1a}
+  .bar{width:110px;height:6px;background:#ff6b1a;border-radius:3px;margin:22px auto}
+  .hero p.big{font-size:20px;color:#c8cace;max-width:600px;margin:0 auto}
+  .hero .cta-row{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .cta{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:800;
+    text-decoration:none;font-size:14px;letter-spacing:1px}
+  .cta.pieno{background:#ff6b1a;color:#0c0c0d}
+  .cta.vuoto{border:2px solid #ff6b1a;color:#ff6b1a}
+  .cta.vuoto:hover{background:#ff6b1a;color:#0c0c0d}
+
+  section{padding:52px 0;border-top:1px solid #1c1c1f}
+  h2{font-size:26px;font-weight:900;letter-spacing:1px;margin-bottom:8px}
+  h2 span{color:#ff6b1a}
+  p.sotto{color:#98979b;margin-bottom:26px}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+  .card{background:#141416;border:1px solid #232326;border-radius:14px;padding:22px}
+  .card .em{font-size:26px}
+  .card h3{font-size:17px;margin:10px 0 6px}
+  .card p{font-size:14px;color:#b9b9be}
+
+  .canali .card a{font-weight:700;text-decoration:none}
+  ol.passi{margin:10px 0 0 20px;color:#c8cace}
+  ol.passi li{margin-bottom:10px}
+  ol.passi b{color:#f5f5f6}
+
+  form.news{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;max-width:480px}
+  input[type=email]{flex:1;min-width:230px;padding:13px 18px;border-radius:999px;
+    border:2px solid #3a3a3e;background:#141416;color:#f5f5f6;font-size:15px;outline:none}
+  input[type=email]:focus{border-color:#ff6b1a}
+  button{padding:13px 26px;border-radius:999px;border:none;background:#ff6b1a;
+    color:#0c0c0d;font-weight:800;font-size:15px;letter-spacing:1px;cursor:pointer}
+  button:hover{filter:brightness(1.1)}
+  p.consent{margin-top:12px;font-size:12px;color:#7a7a7e;max-width:460px}
+  p.consent a{color:#98979b}
+
+  .avviso{background:#141416;border-left:4px solid #ff6b1a;border-radius:0 10px 10px 0;
+    padding:14px 18px;font-size:14px;color:#b9b9be;margin-top:24px}
+
+  footer{border-top:1px solid #232326;padding:28px 22px;text-align:center;
+    font-size:13px;color:#7a7a7e}
+  footer .legali{margin-bottom:8px}
+  footer .legali a{color:#c8cace;text-decoration:none;margin:0 12px;font-weight:600}
+  footer .legali a:hover{color:#ff8a47}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="/">INFI<span>NANZA</span></a>
+    <a class="nl" href="#cosa">Cos'è</a>
+    <a class="nl" href="#canali">Dove trovarci</a>
+    <a class="nl" href="#come">Come funziona</a>
+    <a class="nl" href="#newsletter">Newsletter</a>
+    <a class="nl" href="/privacy.html">Privacy Policy</a>
+    <a class="nl" href="/termini.html">Termini di Servizio</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="inf">&#8734;</div>
+  <h1>INFI<span>NANZA</span></h1>
+  <div class="bar"></div>
+  <p class="big">I soldi, spiegati come nessuno te li ha mai spiegati.
+  Ogni giorno una notizia che tocca il TUO portafoglio, resa semplice.</p>
+  <div class="cta-row">
+    <a class="cta pieno" href="https://www.instagram.com/infinanza__finanza_semplice/" rel="noopener">SEGUICI SU INSTAGRAM</a>
+    <a class="cta vuoto" href="https://www.tiktok.com/@infinanza" rel="noopener">SEGUICI SU TIKTOK</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section id="cosa">
+  <h2>Cos'è <span>Infinanza</span></h2>
+  <p class="sotto">Un progetto editoriale indipendente di educazione finanziaria in italiano.</p>
+  <div class="griglia">
+    <div class="card"><div class="em">📰</div><h3>La notizia del giorno</h3>
+      <p>Ogni giorno scegliamo una notizia di economia o finanza che tocca davvero il
+      portafoglio delle persone — bollette, risparmio, inflazione, mercati — e la
+      spieghiamo in modo semplice, senza gergo tecnico.</p></div>
+    <div class="card"><div class="em">🎠</div><h3>Caroselli</h3>
+      <p>Schede illustrate passo-passo che smontano un tema in 8-10 slide: cosa è
+      successo, perché ti riguarda e cosa puoi farci concretamente.</p></div>
+    <div class="card"><div class="em">🎬</div><h3>Video brevi</h3>
+      <p>Reel e video verticali di 15-25 secondi con voce narrante: la stessa notizia,
+      in un formato pensato per chi ha un minuto e non un'ora.</p></div>
+    <div class="card"><div class="em">✅</div><h3>Fonti verificate</h3>
+      <p>Ogni contenuto passa da una verifica delle fonti (istituzioni, testate
+      economiche, dati ufficiali) prima di essere pubblicato. Educazione, non
+      consulenza: non diamo raccomandazioni personalizzate di investimento.</p></div>
+  </div>
+</section>
+
+<section id="canali" class="canali">
+  <h2>Dove <span>trovarci</span></h2>
+  <p class="sotto">I contenuti di Infinanza escono ogni giorno sui profili ufficiali del brand.</p>
+  <div class="griglia">
+    <div class="card"><div class="em">📸</div><h3>Instagram</h3>
+      <p><a href="https://www.instagram.com/infinanza__finanza_semplice/" rel="noopener">@infinanza__finanza_semplice</a><br>
+      Carosello del giorno, reel e storie con le uscite quotidiane.</p></div>
+    <div class="card"><div class="em">🎵</div><h3>TikTok</h3>
+      <p><a href="https://www.tiktok.com/@infinanza" rel="noopener">@infinanza</a><br>
+      Gli stessi video e caroselli educativi, pubblicati sul profilo TikTok del brand.</p></div>
+    <div class="card"><div class="em">✉️</div><h3>Newsletter</h3>
+      <p>In arrivo: l'approfondimento settimanale via email.
+      <a href="#newsletter">Iscriviti alla lista d'attesa</a>.</p></div>
+  </div>
+</section>
+
+<section id="come">
+  <h2>Come <span>funziona</span></h2>
+  <p class="sotto">Dietro Infinanza c'è una redazione editoriale supportata da una
+  piattaforma di pubblicazione proprietaria.</p>
+  <ol class="passi">
+    <li><b>Selezione e verifica.</b> Ogni mattina la redazione seleziona la notizia del
+    giorno e ne verifica i fatti su fonti primarie (istituzioni, dati ufficiali,
+    principali testate economiche).</li>
+    <li><b>Produzione.</b> La notizia diventa un carosello illustrato e un video breve
+    con script, grafiche e voce narrante, secondo il sistema di design del brand.</li>
+    <li><b>Controllo qualità.</b> Un controllo redazionale valuta chiarezza, correttezza
+    e comprensibilità prima dell'approvazione.</li>
+    <li><b>Pubblicazione programmata.</b> I contenuti approvati vengono pubblicati sui
+    profili ufficiali del brand negli orari di maggiore utilità per il pubblico,
+    tramite le API ufficiali delle piattaforme (Instagram Graph API e TikTok Content
+    Posting API), nel pieno rispetto delle impostazioni di privacy e visibilità
+    scelte dal titolare degli account.</li>
+  </ol>
+  <div class="avviso">⚠️ <b>Nota importante:</b> tutti i contenuti di Infinanza hanno
+  finalità esclusivamente informativa ed educativa e <b>non costituiscono consulenza
+  finanziaria</b> personalizzata, né sollecitazione all'investimento. Prima di ogni
+  decisione economica rilevante rivolgiti a un professionista abilitato.</div>
+</section>
+
+<section id="newsletter">
+  <h2>La <span>newsletter</span> sta arrivando</h2>
+  <p class="sotto">Un approfondimento a settimana, spiegato semplice. Entra in lista
+  d'attesa: ti avvisiamo al lancio.</p>
+  <p class="news"><a class="cta" href="mailto:infinanza.official@gmail.com?subject=Lista%20d'attesa%20newsletter"
+     style="display:inline-block;padding:12px 28px;border-radius:999px;background:#F2731D;color:#fff;font-weight:800;text-decoration:none">SCRIVICI PER ENTRARE IN LISTA</a></p>
+  <p class="consent">Riceverai solo l'avviso di lancio. Niente spam, cancellazione
+  quando vuoi. Trattamento dati: <a href="/privacy.html">Privacy Policy</a>.</p>
+</section>
+
+<section id="contatti">
+  <h2>Contatti</h2>
+  <p>Per qualsiasi richiesta — informazioni, collaborazioni, privacy e dati — scrivi
+  all'indirizzo ufficiale del progetto:
+  <a href="mailto:infinanza.official@gmail.com">infinanza.official@gmail.com</a><br>
+  oppure segui il <a href="https://whatsapp.com/channel/0029VbCeWsVCnA7mP69DSo2j" rel="noopener">canale WhatsApp</a>.
+  Trattamento dei dati: <a href="/privacy.html">Privacy Policy</a>.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="legali">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/termini.html">Termini di Servizio</a>
+    <a href="mailto:infinanza.official@gmail.com">Contatti</a>
+  </div>
+  <div>Infinanza — progetto editoriale indipendente di educazione finanziaria.
+  I contenuti non costituiscono consulenza finanziaria.</div>
+</footer>
+
+</body>
+</html>

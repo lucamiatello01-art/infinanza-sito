@@ -174,8 +174,20 @@
   <h2>La <span>newsletter</span> sta arrivando</h2>
   <p class="sotto">Un approfondimento a settimana, spiegato semplice. Entra in lista
   d'attesa: ti avvisiamo al lancio.</p>
-  <p class="news"><a class="cta" href="mailto:infinanza.official@gmail.com?subject=Lista%20d'attesa%20newsletter"
-     style="display:inline-block;padding:12px 28px;border-radius:999px;background:#F2731D;color:#fff;font-weight:800;text-decoration:none">SCRIVICI PER ENTRARE IN LISTA</a></p>
+  <!-- Modulo lista d'attesa — Formspree (dal 24/08/2026, chiude G112).
+       Su GitHub Pages non esiste un motore per i moduli: l'invio va a Formspree,
+       che inoltra l'indirizzo alla posta del progetto. _redirect porta alla
+       pagina di ringraziamento nostra; _gotcha e' la trappola antispam
+       (campo nascosto: un umano non lo compila mai, i bot si'). -->
+  <form class="news" action="https://formspree.io/f/mvkpjgjl" method="POST">
+    <input type="email" name="email" placeholder="La tua email" required
+           autocomplete="email" aria-label="La tua email">
+    <input type="hidden" name="_subject" value="Lista d'attesa newsletter — infinanza.net">
+    <input type="hidden" name="_redirect" value="https://infinanza.net/grazie.html">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
+           style="position:absolute;left:-9999px" aria-hidden="true">
+    <button type="submit">ENTRA IN LISTA</button>
+  </form>
   <p class="consent">Riceverai solo l'avviso di lancio. Niente spam, cancellazione
   quando vuoi. Trattamento dati: <a href="/privacy.html">Privacy Policy</a>.</p>
 </section>
